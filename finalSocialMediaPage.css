@@ -1,0 +1,230 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  color: white;
+  background-color: #ed0e0e;
+}
+
+body {
+
+  background-color: #121212;
+}
+
+.posts-container {
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sidebar {
+  background-color: #fef8f8;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f8f1f1;
+  font-style: oblique;
+}
+
+#posts {
+  margin-top: 20px;
+}
+
+.post {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #fab108;
+  color: white;
+}
+
+.post h3 {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+.post p {
+  margin-left: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.post img {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: auto;
+  margin-bottom: 10px;
+  width: 50vw;
+  border: 2px solid red;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.post button {
+  margin-left: 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 15px;
+  color: black;
+  background-color: white;
+  width: 8.5rem;
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid rgb(4, 255, 0);
+  transition: all 1s ease-in-out 0.1s;
+}
+
+.post input {
+  color: black;
+  background-color: white;
+  width: 8.5rem;
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid rgb(4, 255, 0);
+}
+
+.post button:hover {
+  background-color: #a7a7a7;
+
+}
+
+
+.post-footer {
+  margin-left: 20px;
+  font-size: 14px;
+  margin-top: 10px;
+  color: black;
+  background-color: white;
+  width: 8.5rem;
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid rgb(92, 97, 47);
+}
+
+.post-footer:hover {
+  background-color: red;
+  color: white;
+  transition: all 2s ease-in-out 0.1s;
+}
+
+.comments-container {
+  margin-top: 10px;
+  color: #666;
+}
+
+.comments-container p {
+  margin-left: 20px;
+}
+
+.sidebar {
+  /* flex: 1; */
+  padding-left: 20px;
+  margin-top: 85px;
+  margin-left: 20px;
+  height: 250px;
+  width: 400px;
+  font-size: 25px;
+  background-color: #121212;
+  border: 2px solid rebeccapurple;
+}
+
+.sidebar input[type="text"],
+.sidebar input[type="file"] {
+  width: 90%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.sidebar button[type="submit"] {
+
+  font-size: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+
+.sidebar button[type="submit"]:hover {
+  background-color: #41ae33;
+}
+
+/*  */
+#newPost {
+  color: white;
+  border: 2px solid rgb(245, 238, 238);
+  background-color: rgb(49, 52, 52);
+  padding: 5px;
+  border-radius: 10px;
+  width: 4rem;
+  position: fixed;
+  text-align: center;
+  top: 5px;
+  left: 10px;
+  /* default cases  */
+  display: none;
+}
+
+
+
+#sideBarId {
+  border: 2px solid rgb(244, 241, 241);
+  color: rgb(233, 225, 225);
+  position: fixed;
+  width: 200px;
+  border-radius: 10px;
+  background-color: rgb(48, 50, 48);
+  top: -4%;
+  left: 10%;
+  /* when screen szie less then the  900px */
+  display: none;
+}
+@media screen and (max-width:900px) {
+  #newPost {
+    display: block;
+  }
+  .post img {
+            width: 90%;
+  }
+  #larSideBar {
+    display: none;
+  }
+  .inputClass{
+    border: 2px solid red;
+  }
+  .post input{
+        margin: 3px;
+    margin-left: 20px;
+    
+  }
+}
+
+@media screen and (max-width:900px) and (min-width:300px) {
+ 
+}
+
+
+#skipPost{
+  color: white;
+  position: absolute;
+  left: 65%;
+  top: 5%;
+  text-decoration: none;
+ border-radius: 10px;
+  color: rgb(6, 34, 241);
+  border: 2px solid rgb(6, 14, 96);
+  font-size: 16px;
+  background-color: rgb(237, 230, 230);
+  padding: 2px 5px;
+
+}
+
+
